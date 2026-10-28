@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Live Classifier</string>
+    <string name="tagline">طبقه‌بندی زندهٔ تصویر • روی خود گوشی</string>
+    <string name="camera_hint">یک شیء را وسط تصویر بگیر</string>
+    <string name="model_name">EfficientNet-Lite0 · ImageNet</string>
+    <string name="loading_model">در حال آماده‌سازی مدل…</string>
+    <string name="waiting_camera">در انتظار تصویر دوربین…</string>
+    <string name="live_status">زنده • پردازش آفلاین</string>
+    <string name="paused_status">پردازش متوقف است؛ تصویر دوربین زنده می‌ماند</string>
+    <string name="pause">توقف پردازش</string>
+    <string name="resume">ادامهٔ پردازش</string>
+    <string name="enable_camera">فعال‌کردن دوربین</string>
+    <string name="camera_settings">مجوز دوربین در تنظیمات</string>
+    <string name="permission_needed">برای نمایش تصویر، اجازهٔ دسترسی به دوربین لازم است.</string>
+    <string name="retry">تلاش دوباره</string>
+    <string name="model_error">مدل باز نشد. «تلاش دوباره» را بزن.</string>
+    <string name="camera_error">دوربین باز نشد. برنامه‌های دیگرِ دوربین را ببند و دوباره تلاش کن.</string>
+    <string name="frame_error">پردازش تصویر انجام نشد. دوباره تلاش کن.</string>
+    <string name="top_predictions">سه پیش‌بینی اول</string>
+    <string name="empty_prediction">—</string>
+    <string name="no_result">نتیجه‌ای برنگشت</string>
+    <string name="performance">پردازش: %1$d ms • نرخ نتیجه: %2$.1f /s</string>
+    <string name="model_note">نام کلاس‌ها انگلیسی است. امتیاز مدل، تضمین درستی نتیجه نیست.</string>
+    <string name="privacy_note">تصاویر ذخیره یا ارسال نمی‌شوند.</string>
+    <string name="camera_preview">تصویر زندهٔ دوربین؛ برش مربع مرکزی تحلیل می‌شود</string>
+    <string name="fallback_class">Class %1$d</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="@color/background" android:padding="20dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="@string/app_name" android:textColor="@color/text_primary"
+        android:textSize="26sp" android:textStyle="bold" android:textDirection="ltr" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:text="@string/tagline"
+        android:textColor="@color/text_secondary" android:textSize="13sp" />
+    <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:layout_marginBottom="8dp"
+        android:text="@string/loading_model" android:textColor="@color/mint" android:textSize="13sp" />
+    <FrameLayout android:id="@+id/camera_stage" android:layout_width="match_parent"
+        android:layout_height="240dp" android:background="@color/surface">
+        <androidx.camera.view.PreviewView android:id="@+id/preview"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_gravity="center" android:contentDescription="@string/camera_preview" />
+    </FrameLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:gravity="center" android:text="@string/camera_hint"
+        android:textColor="@color/text_secondary" android:textSize="13sp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:orientation="vertical" android:padding="16dp"
+        android:background="@drawable/panel">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/top_predictions" android:textColor="@color/text_secondary" android:textSize="12sp" />
+        <TextView android:id="@+id/prediction_one" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="36dp" android:gravity="center_vertical" android:textDirection="ltr"
+            android:text="@string/empty_prediction" android:textSize="19sp" android:textStyle="bold" android:textColor="@color/mint" />
+        <TextView android:id="@+id/prediction_two" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="28dp" android:gravity="center_vertical" android:textDirection="ltr"
+            android:text="@string/empty_prediction" android:textSize="15sp" android:textColor="@color/text_primary" />
+        <TextView android:id="@+id/prediction_three" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:minHeight="28dp" android:gravity="center_vertical" android:textDirection="ltr"
+            android:text="@string/empty_prediction" android:textSize="15sp" android:textColor="@color/text_primary" />
+        <TextView android:id="@+id/performance" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="@string/model_name" android:textColor="@color/text_secondary" android:textSize="12sp" />
+    </LinearLayout>
+    <Button android:id="@+id/pause_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp"
+        android:layout_marginTop="8dp" android:text="@string/pause" android:textAllCaps="false"
+        android:backgroundTint="@color/mint" android:textColor="@color/background" android:enabled="false" />
+    <Button android:id="@+id/action_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="52dp"
+        android:text="@string/enable_camera" android:textAllCaps="false" android:visibility="gone"
+        android:backgroundTint="@color/mint" android:textColor="@color/background" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="4dp" android:text="@string/model_note" android:textColor="@color/text_secondary" android:textSize="11sp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="3dp" android:text="@string/privacy_note" android:textColor="@color/text_secondary" android:textSize="11sp" />
+    </LinearLayout>
+</ScrollView>
